@@ -1,0 +1,6 @@
+app/code/community/MobWeb/ForceError app/code/community/MobWeb/ForceError/
+
+app/etc/modules/MobWeb_ForceError.xml app/etc/modules/MobWeb_ForceError.xml
+
+# Clear the cache
+@shell   rm -rf $PROJECT/var/cache/* && echo "Magento Cache cleared"

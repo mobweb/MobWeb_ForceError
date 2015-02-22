@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <MobWeb_ForceError>
+            <version>0.1.0</version>
+        </MobWeb_ForceError>
+    </modules>
+    <!--
+    <admin>
+        <routers>
+            <forceerror>
+                <use>admin</use>
+                <args>
+                    <module>MobWeb_ForceError</module>
+                    <frontName>forceerror</frontName>
+                </args>
+            </forceerror>
+        </routers>   
+    </admin>
+    -->
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <forceerror before="Mage_Adminhtml">MobWeb_ForceError_Adminhtml</forceerror>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <frontend>
+        <routers>
+            <forceerror>
+                <use>standard</use>
+                <args>
+                    <module>MobWeb_ForceError</module>
+                    <frontName>forceerror</frontName>
+                </args>
+            </forceerror>
+        </routers>   
+    </frontend>
+</config>
