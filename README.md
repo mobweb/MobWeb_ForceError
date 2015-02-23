@@ -6,15 +6,15 @@ The following URLs are available:
 
 **Frontend**:
 
-- http://example.com/forceerror/frontendmagentoexception/
-- http://example.com/forceerror/frontendphpnotice/
-- http://example.com/forceerror/frontendphpfatalerror/
+- http://example.com/forceerror/exception/: Magento exception 
+- http://example.com/forceerror/notice/: PHP notice
+- http://example.com/forceerror/error/: PHP fatal error
 
 **Backend**:
 
-- http://example.com/admin/backendmagentoexception/
-- http://example.com/admin/backendphpnotice/
-- http://example.com/admin/backendphpfatalerror/
+- http://example.com/admin/exception/: Magento exception
+- http://example.com/admin/notice/: PHP notice
+- http://example.com/admin/error/: PHP fatal error
 
 Notice: You might have to turn off *Add Secret Key to URLs* in your configuration to be able to access the backend URLs directly without providing a key with the request.
 
